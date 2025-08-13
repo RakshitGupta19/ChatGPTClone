@@ -26,7 +26,7 @@ export default function ChatWindow() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch("https://chatgptclone-1-kqml.onrender.com/api/chat", options);
       const res = await response.json()
       console.log(res);
       setReply(res.reply);
