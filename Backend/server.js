@@ -11,6 +11,10 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api", chatRoutes);
+app.use("/dummy",(req,res) =>{
+  res.json({message:"Hello World"})
+});
+
 
 const connectDB = async() => {
     try {
